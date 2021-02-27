@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Louis Sivori</title>
+		<link rel="icon" href="assets/favicon.png">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/bootstrap-icons.css">
+		<link rel="stylesheet" href="styles/stylesheet.css">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P|Playfair+Display|Playfair+Display+SC">
+	</head>
+
+	<body class="bg-dark text-light" style="font-family: 'Playfair Display', serif;">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-md navbar-light bg-light container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<i class="bi bi-house"></i> Louis Sivori
+			</a>
+
+			<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options">
+				<i class="navbar-toggler-icon"></i>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbar-options">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="projects.html">
+							<i class="bi bi-code-slash"></i> Code
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">
+							<i class="bi bi-person"></i> About
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">
+							<i class="bi bi-envelope"></i> Contact
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid mb-4">
+			<h1 class="display-1 mt-4 text-success" style="font-family: Playfair Display SC;">
+				<i class="bi bi-code-slash"></i> Code
+			</h1>
+			<hr>
+
+			<div id="code-carousel" class="carousel slide" data-bs-ride="carousel">
+				<!--menu for carousel-->
+				<ol class="carousel-indicators mt-4" style="bottom: -50px;">
+					<li data-bs-target="#code-carousel" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#code-carousel" data-bs-slide-to="1"></li>
+					<li data-bs-target="#code-carousel" data-bs-slide-to="2"></li>
+				</ol>
+
+
+				<div class="carousel-inner mx-auto row w-75 h-75">
+					<!-- projects -->
+					<!-- decided that I like cards, so each slide is still a card -->
+					<!-- slide 1 -->
+					<div id="slide-1" class="carousel-item col-md-4 active">
+						<div class="card bg-success text-center">
+							<!--card header -->
+							<div class="card-header">
+								<a href="https://lasivori.github.io/AdventureAwaits/index.html" target="_blank"><img class="img-thumbnail img-fluid w-25" src="assets/AdventureAwaits.PNG"></a>
+							</div>
+		
+							<div class="card-body">
+								<h3 class="card-title"> Huzzah! Adventure! </h3>
+								<p class="card-text"> A simple 'Choose Your Own Adventure' game that I wrote </p>
+							</div>
+		
+							<div class="card-footer">
+								<small class="text-dark"> HTML, CSS </small>
+								<a href="https://lasivori.github.io/AdventureAwaits/index.html" class="btn btn-primary float-end" target="_blank"> See More </a>
+							</div>
+						</div>
+					</div>
+					<!-- slide 2 -->
+					<div id="slide-2" class="carousel-item col-md-4">
+						<div class="card bg-success text-center">
+							<!--card header -->
+							<div class="card-header">
+								<a href="https://github.com/lasivori/cloud-computing" target="_blank"><img class="img-thumbnail img-fluid w-25" src="assets/cloud-computing.PNG"></a>
+							</div>
+		
+							<div class="card-body">
+								<h3 class="card-title"> Cloud Computing Projects </h3>
+								<p class="card-text"> These were projects created for my Cloud Computing class </p>
+							</div>
+		
+							<div class="card-footer">
+								<small class="text-dark"> Python, AWS </small>
+								<a href="https://github.com/lasivori/cloud-computing" class="btn btn-primary float-end" target="_blank"> See More </a>
+							</div>
+						</div>
+					</div>
+
+					<!-- slide 3 -->
+					<div id="slide-3" class="carousel-item col-md-4">
+						<div class="card bg-success text-center">
+							<!--card header -->
+							<div class="card-header">
+								<a href="https://github.com/lasivori/picoCTF-2018" target="_blank"><img class="img-thumbnail img-fluid w-25" src="assets/picoctf-logo-og.png"></a>
+							</div>
+		
+							<div class="card-body">
+								<h3 class="card-title"> PicoCTF-2018 WriteUps </h3>
+								<p class="card-text"> These are writeups for cybersecurity challenges that I completed for the PicoCTF-2018 competition. </p>
+							</div>
+		
+							<div class="card-footer">
+								<small class="text-dark"> Python </small>
+								<a href="https://github.com/lasivori/picoCTF-2018" class="btn btn-primary float-end" target="_blank"> See More </a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carousel Controls -->
+				<a class="carousel-control-prev" href="#code-carousel" role="button" data-bs-slide="prev">
+					<i class="carousel-control-prev-icon"></i>
+				</a>
+				<a class="carousel-control-next" href="#code-carousel" role="button" data-bs-slide="next">
+					<i class="carousel-control-next-icon"></i>
+				</a>
+			</div>
+		</div>
+		<div class="align-bottom text-center pt-2 sticky-bottom">
+			<hr>
+			<p class="text-muted"> These are all either personal projects, or assignments from my classes. If you have any suggestions on what else I could work on, or how I could make any of these projects better, let me know through my contact page. </p>
+		</div>
+
+		<script src="scripts/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
